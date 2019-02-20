@@ -1,0 +1,46 @@
+{
+  "name": "abscli",
+  "version": "1.0.6",
+  "description": "cli for flex server mongodb",
+  "main": "abscli.js",
+  "scripts": {
+    "dev": "node abscli.js",
+    "test": "jest",
+    "format": "prettier --write  \"src/**/*.js\"",
+    "lint": "eslint **/*.js",
+    "prepare": "",
+    "prepublishOnly": "npm test",
+    "preversion": "npm run lint",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags"
+  },
+  "preferGlobal": true,
+  "bin": "./abscli.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arpit-absyadav/abscli.git"
+  },
+  "keywords": [
+    "abscli",
+    "mongodb flex server"
+  ],
+  "author": "Arpit Yadav <arpit.absyadav@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arpit-absyadav/abscli/issues"
+  },
+  "homepage": "https://github.com/arpit-absyadav/abscli#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "figlet": "^1.2.1",
+    "inquirer": "^6.2.1",
+    "lodash": "^4.17.11",
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "jest": "^24.1.0",
+    "prettier": "^1.16.1"
+  }
+}
