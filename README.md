@@ -1,5 +1,10 @@
 ## Welcome to the `ABSCLI`
 
+```bash
+> `npm i -g abscli`
+
+```
+
 The abscli is intended to provide a simple module creator for flex-server-mongodb.
 
 - **N**ode.js : JavaScript runtime environment – lets you implement your application back-end in JavaScript
@@ -11,13 +16,21 @@ The abscli is intended to provide a simple module creator for flex-server-mongod
 - npm - comes with node or download yarn - [Download page](https://yarnpkg.com/lang/en/docs/install) .
 - mongodb - [Download page](https://www.mongodb.com/download-center/community) .
 
-### Installation
+### Use commands
+
+```bash
+> `npm i -g abscli`
+```
+
+### Cloniong and run
 
 ```
+
 git clone https://github.com/arpit-absyadav/abscli.git
 cd abs
 npm install
 sudo npm link (for registering)
+
 ```
 
 ### Use commands
@@ -25,5 +38,5 @@ sudo npm link (for registering)
 ```bash
 > `cd to folder`
 
-> `flex`
+> `abscli`
 ```
