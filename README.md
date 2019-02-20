@@ -16,15 +16,9 @@ The abscli is intended to provide a simple module creator for flex-server-mongod
 - npm - comes with node or download yarn - [Download page](https://yarnpkg.com/lang/en/docs/install) .
 - mongodb - [Download page](https://www.mongodb.com/download-center/community) .
 
-### Use commands
-
-```bash
-> `npm i -g abscli`
-```
-
 ### Cloniong and run
 
-```
+```bash
 
 git clone https://github.com/arpit-absyadav/abscli.git
 cd abs
@@ -36,7 +30,7 @@ sudo npm link (for registering)
 ### Use commands
 
 ```bash
-> `cd to folder`
+> `cd to folder where you want to create the module`
 
 > `abscli`
 ```
