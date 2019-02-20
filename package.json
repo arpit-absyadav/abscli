@@ -9,7 +9,7 @@
     "format": "prettier --write  \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "",
-    "prepublishOnly": "npm test && npm run lint",
+    "prepublishOnly": "npm test",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
