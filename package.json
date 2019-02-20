@@ -1,6 +1,6 @@
 {
   "name": "abscli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "cli for flex server mongodb",
   "main": "abscli.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "prepare": "",
     "prepublishOnly": "npm test",
     "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
+    "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
   "preferGlobal": true,
