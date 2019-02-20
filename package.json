@@ -1,6 +1,6 @@
 {
   "name": "abscli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cli for flex server mongodb",
   "main": "abscli.js",
   "scripts": {
@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "eslint": "^5.14.1",
-    "jest": "^24.1.0"
+    "jest": "^24.1.0",
+    "prettier": "^1.16.1"
   }
 }
