@@ -1,7 +1,7 @@
 ## Welcome to the `ABSCLI`
 
 ```bash
-> `npm i -g abscli`
+> npm i -g abscli
 
 ```
 
@@ -21,7 +21,7 @@ The abscli is intended to provide a simple module creator for flex-server-mongod
 ```bash
 
 git clone https://github.com/arpit-absyadav/abscli.git
-cd abs
+cd abscli
 npm install
 sudo npm link (for registering)
 
@@ -30,7 +30,7 @@ sudo npm link (for registering)
 ### Use commands
 
 ```bash
-> `cd to folder where you want to create the module`
+> cd  ` to folder where you want to create the module`
 
-> `abscli`
+> abscli
 ```
