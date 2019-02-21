@@ -4,7 +4,7 @@
  * @Author: Arpit.Yadav
  * @Date: 2019-02-20 21:15:26
  * @Last Modified by: Arpit.Yadav
- * @Last Modified time: 2019-02-21 00:45:06
+ * @Last Modified time: 2019-02-21 10:18:21
  */
 
 const inquirer = require('inquirer');
@@ -83,13 +83,13 @@ const run = async () => {
   // upateing Express.js
   console.log(chalk.yellow('UPDATING ') + `[Express Config]  ../../config/express.js`);
   await shell.exec(
-    `sed -i '/aboveroutes/i require("./../app/modules/${moduleName}/${moduleName}.routes.js")(app)'  ../../config/express.js  `,
+    `sed -i '/aboveroutes/i require("./../app/modules/${moduleName}/${moduleName}.routes")(app)'  ../../config/express.js  `,
   );
 
   // upateing Mongoose.js
   console.log(chalk.yellow('UPDATING ') + `[Mongoose Config]  ../../config/database/mongoose.js`);
   await shell.exec(
-    `sed -i '/schemas/i require("./../app/modules/${moduleName}/${moduleName}.model.js")'  ../../config/database/mongoose.js`,
+    `sed -i '/schemas/i require("./../../app/modules/${moduleName}/${moduleName}.model")'  ../../config/database/mongoose.js`,
   );
 };
 
