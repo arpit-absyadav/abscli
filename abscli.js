@@ -4,13 +4,13 @@
  * @Author: Arpit.Yadav
  * @Date: 2019-02-20 21:15:26
  * @Last Modified by: Arpit.Yadav
- * @Last Modified time: 2019-02-21 10:18:21
+ * @Last Modified time: 2019-02-22 14:51:26
  */
 
-const inquirer = require('inquirer');
+// const inquirer = require('inquirer');
 const chalk = require('chalk');
 const figlet = require('figlet');
-const program = require('commander');
+// const program = require('commander');
 const shell = require('shelljs');
 const _ = require('lodash');
 
@@ -27,6 +27,7 @@ const init = () => {
 };
 const run = async () => {
   init();
+  // eslint-disable-next-line no-undef
   let moduleName = process.argv.slice(2);
   console.log(moduleName);
 
@@ -63,6 +64,7 @@ const run = async () => {
   await shell.exec(`sed -i 's/School/${moduleStartcase}/g' ./${moduleName}/${moduleName}.model.js `);
   //   // Routes
   await shell.exec(`sed -i 's/school/${moduleName}/g' ./${moduleName}/${moduleName}.routes.js `);
+  await shell.exec(`sed -i 's/School/${moduleStartcase}/g' ./${moduleName}/${moduleName}.routes.js `);
   await shell.exec(`sed -i 's/_schoolValidator/_${moduleName}Validator/g' ./${moduleName}/${moduleName}.routes.js `);
 
   // Service
@@ -75,9 +77,12 @@ const run = async () => {
 
   // Validator
   await shell.exec(`sed -i 's/school/${moduleName}/g' ./${moduleName}/${moduleName}.validator.js `);
+  await shell.exec(`sed -i 's/School/${moduleStartcase}/g' ./${moduleName}/${moduleName}.validator.js `);
   // Validator folder
   await shell.exec(`sed -i 's/school/${moduleName}/g' ./${moduleName}/validators/registration.validator.js `);
-  await shell.exec(`sed -i 's/school/${moduleName}/g' ./${moduleName}/validators/login.validator.js 
+  await shell.exec(`sed -i 's/school/${moduleName}/g' ./${moduleName}/validators/other.validator.js 
+  `);
+  await shell.exec(`sed -i 's/School/${moduleStartcase}/g' ./${moduleName}/validators/other.validator.js 
   `);
 
   // upateing Express.js
