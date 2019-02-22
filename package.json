@@ -1,6 +1,6 @@
 {
   "name": "abscli",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "cli for flex server mongodb",
   "main": "abscli.js",
   "scripts": {
