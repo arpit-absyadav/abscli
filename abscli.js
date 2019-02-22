@@ -4,7 +4,7 @@
  * @Author: Arpit.Yadav
  * @Date: 2019-02-20 21:15:26
  * @Last Modified by: Arpit.Yadav
- * @Last Modified time: 2019-02-23 00:59:11
+ * @Last Modified time: 2019-02-23 02:00:47
  */
 
 // const inquirer = require('inquirer');
@@ -35,7 +35,7 @@ const run = async () => {
   init();
   // eslint-disable-next-line no-undef
   let passedArgs = process.argv.slice(2);
-  console.log(passedArgs);
+  // console.log(passedArgs);
   if (passedArgs.length == 2) {
     if (passedArgs[0] == '--server') {
       generateServer(passedArgs[1]);
