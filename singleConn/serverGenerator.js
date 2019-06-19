@@ -1,6 +1,5 @@
 const chalk = require('chalk');
 const shell = require('shelljs');
-const _ = require('lodash');
 
 exports.generateServer = async function(serverName) {
   console.log('Welcome to server Generator');
