@@ -1,13 +1,13 @@
-## Welcome to the `ABSCLI`
+## Welcome to the `@abslibs/abscli`
 
 `Auther` - `Arpit Yadav`
 
 ```bash
-> npm i -g abscli
+> npm i -g @abslibs/abscli
 
 ```
 
-The abscli is intended to provide a simple module creator for flex-server-mongodb.
+The @abslibs/abscli is intended to provide a simple module creator for flex-server-mongodb.
 
 - **N**ode.js : JavaScript runtime environment – lets you implement your application back-end in JavaScript
 
@@ -22,8 +22,8 @@ The abscli is intended to provide a simple module creator for flex-server-mongod
 
 ```bash
 
-git clone https://github.com/arpit-absyadav/abscli.git
-cd abscli
+git clone https://github.com/arpit-absyadav/@abslibs/abscli.git
+cd @abslibs/abscli
 npm install
 sudo npm link (for registering)
 
@@ -34,7 +34,7 @@ sudo npm link (for registering)
 ```bash
 > cd  ` to folder where you want to create the module`
 
-> abscli  # Will get all possible command combinations.
+> @abslibs/abscli  # Will get all possible command combinations.
 ```
 
 #
@@ -44,15 +44,15 @@ sudo npm link (for registering)
 ### `1 - Create Server`
 
 ```
-> abscli --server servername
+> @abslibs/abscli --server servername
 # cd to module folder
-> abscli --module modulename
+> @abslibs/abscli --module modulename
 ```
 
 ### `2 - Create Server with multiple database`
 
 ```
-> abscli --server servername --multi-db-conn
+> @abslibs/abscli --server servername --multi-db-conn
 # cd to module folder
-> abscli --module modulename --multi-db-conn
+> @abslibs/abscli --module modulename --multi-db-conn
 ```
